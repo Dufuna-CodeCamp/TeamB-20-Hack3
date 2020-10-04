@@ -78,6 +78,52 @@ span{
 	color: #6daffe;
 }
 
+
+
+/**********Forms***************/
+
+h1,h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+  padding: 10px;
+}
+
+input,
+#gender {
+  width: 230px;
+  height: 34px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.details {
+  padding: 50px 0 40px 100px;
+}
+
+.but {
+  margin-left: 70px;
+  background-color: #b9732f;
+  border-radius: 5px;
+  border-color: #b9732f;
+}
+
+.error {
+  font-size: 15px;
+  color: red;
+  padding-left: 225px;
+}
+
 /*------------------- Footer Starts Here------------------*/
 .footer-container{
   background-color:#2d3032; 
@@ -85,21 +131,19 @@ span{
   padding-bottom: 20px;
 
 }
-.footer-left,
- .footer-center,
- .footer-right{
- float:left;
- width:33.33%;
- color: #d2d3d3;
 
+.container {
+  display: flex;
+  flex-direction: row;
 }
+
 .footer-container p{
   margin:0 auto;
-  display:block;
-   margin-top:50px;
-   color:#fff;
-
+  margin-top:50px;
+  color:#fff;
+  text-align: center;
 }
+
 .footer-left h5{
   padding: 10px;
 }
@@ -170,6 +214,7 @@ span{
   background: #007bb5;
   color: white;
 }
+
 /*
 nav{
 	background: #edf6ff;
