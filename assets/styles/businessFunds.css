@@ -131,6 +131,9 @@ label{
   font-weight: bold;
   color: black;
 }
+ul li{
+  list-style: none;
+}
 /**End of styling for business owner*/
 /*------------------- Footer Starts Here------------------*/
 .footer-container{
