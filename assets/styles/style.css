@@ -1,13 +1,3 @@
-/* this can be changed 
-
-we agreed the color should be blue and white
-
-am suggesting we check this colors #437fcf; #6daffe ; #edf6ff 
-
-and match anyone with this #b9732f
-
-*/
-
 *{
   
   padding:0;
@@ -92,15 +82,15 @@ h1 {
 }
 
 label {
-  display: inline-block;
-  width: 200px;
+  display: block;
+  max-width: 100%;
   text-align: left;
   padding: 10px;
 }
 
-input,
+.details input,
 #gender {
-  width: 230px;
+  max-width: 100%;
   height: 34px;
   background-color: rgb(209, 209, 209);
   border-radius: 8px;
@@ -108,11 +98,13 @@ input,
 }
 
 .details {
-  padding: 50px 0 40px 100px;
+  max-width: 100%;
+  padding: 50px 0 40px 50px;
 }
 
-.but {
-  margin-left: 70px;
+.details .but {
+  margin-left: 37px;
+  max-width: 100%;
   background-color: #b9732f;
   border-radius: 5px;
   border-color: #b9732f;
@@ -121,8 +113,46 @@ input,
 .error {
   font-size: 15px;
   color: red;
-  padding-left: 225px;
 }
+
+@media screen and (min-width: 640px) {
+  label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .details input,
+  #gender {
+    width: 230px;
+  }
+  
+  .details {
+    padding: 50px 0 40px 100px;
+  }
+  
+  .details .but {
+    margin-left: 70px;
+  }
+  
+  .error {
+    padding-left: 225px;
+  }
+  
+}
+
+@media screen and (min-width: 451px) and (max-width: 640px) {
+  label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+  }
+
+  .error {
+    padding-left: 225px;
+  }
+}
+
 
 /*------------------- Footer Starts Here------------------*/
 .footer-container{
@@ -146,7 +176,9 @@ input,
 
 .footer-left h5{
   padding: 10px;
+  color: #fff;
 }
+
 .footer-left h3{
 	padding-left: 15px;
 
@@ -166,6 +198,7 @@ input,
 .footer-center input{
   margin-top:2px;
   border:1px solid #555;
+  background-color: rgb(209, 209, 209);
   height:30px;
 }
 ::placeholder{
@@ -215,95 +248,3 @@ input,
   color: white;
 }
 
-/*
-nav{
-	background: #edf6ff;
-	height: 80px;
-	width: 100%;
-}
-label.logo{
-	color: #6daffe;
-	font-size: 35px;
-	line-height: 80px;
-	padding: 0 100px;
-	font-weight: bold;
-}
-span{
-	color: #b9732f;
-}
-
-nav ul{
-	float: right;
-	margin-right: 20px;
-}
-
-nav ul li{
-	display: inline-block;
-	line-height: 80px;
-	margin: 0 5px;
-}
-
-nav ul li a{
-	color: #6daffe;
-	font-size: 17px;
-	border-radius: 3px;
-	text-transform: uppercase;
-}
-
-a:hover{
-	background:  #b9732f;
-
-} */
-
-
-
-
-/*------------------- Footer Starts Here------------------*/
-/* .footer-container{
-  background-color:#edf6ff;
-}
-h3{
-	 color:#6daffe;
-	 padding-top: 10px;
-}
-.footer-left,
- .footer-center,
- .footer-right{
- float:left;
- width:33.33%;
- color:#000;
-}
-.footer-left h5{
-	margin: 10px;
-}
-.footer-left h3{
-	padding-left: 20px;
-}
-.footer-container p{
-  margin:0 auto;
-  display:block;
-   margin-top:30px;
-   color:#000;
-   text-align: center;
-}
-.footer-right ul{
-  list-style:none;
-  margin-top:10px;
-}
-
-.footer-container a{
-  text-decoration:none;
- 
-  font-size: 20px;
-  margin:0;
-  padding:0;
-}
-.footer-center input{
-  margin-top:2px;
-  border:1px solid #555;
-  height:30px;
-}
-::placeholder{
-    color:#116466;
-    font-size:15.2px;
-  }  */
