@@ -7,7 +7,7 @@ let businessDetailform = document.querySelector(".businessDetails"),
 ;
 
 function nameValidation(name, event, error) {
-    let nameRegex = /^[a-z]+$/i;
+    let nameRegex = /^([a-zA-Z0-9]+|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{3,}\s{1}[a-zA-Z0-9]{1,})$/;
     if(name.value === '') {
         name.nextElementSibling.innerHTML = "This field is required";
         event.preventDefault();
