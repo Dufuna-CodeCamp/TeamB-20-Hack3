@@ -5,10 +5,10 @@ let submitForm = document.getElementById('fundForm'),
     secondUseSummary = document.getElementById('secondUseSummary'),
     thirdUse = document.getElementById('thirdUse'),
     thirdUseSummary = document.getElementById('thirdUseSummary'),
-    ForthUse = document.getElementById('ForthUse'),
-    ForthUseSummary = document.getElementById('ForthUseSummary'),
-    FirthUse = document.getElementById('FirthUse'),
-    FirthUseSummary = document.getElementById('FirthUseSummary'),
+    forthUse = document.getElementById('forthUse'),
+    forthUseSummary = document.getElementById('forthUseSummary'),
+    firthUse = document.getElementById('firthUse'),
+    firthUseSummary = document.getElementById('firthUseSummary'),
     sixthUse = document.getElementById('sixthUse'),
     sixthUseUseSummary = document.getElementById('sixthUseUseSummary')
 ;
@@ -29,10 +29,10 @@ function fundForm (e){
     required (secondUseSummary, e);
     required (thirdUse, e);
     required (thirdUseSummary, e);
-    required (ForthUse ,e);
-    required (ForthUseSummary, e);
-    required (FirthUse, e);
-    required (FirthUseSummary, e);
+    required (forthUse ,e);
+    required (forthUseSummary, e);
+    required (firthUse, e);
+    required (firthUseSummary, e);
     required (sixthUse, e);
     required (sixthUseUseSummary, e);
     return true;
