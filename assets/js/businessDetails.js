@@ -1,12 +1,9 @@
-let businessOwnerform = document.querySelector(".businessOwner"),
-    firstName = document.getElementById('firstname'),
-    lastName = document.getElementById('lastname'),
-    email = document.getElementById('email'),
-    gender = document.getElementById('gender'),
+let businessDetailform = document.querySelector(".businessDetails"),
+    businessName = document.getElementById("businessname"),
+    businessLine = document.getElementById("businessline"),
     phoneNumber = document.getElementById('number'),
-    homeAddress = document.getElementById('address'),
-    nextOfkin = document.getElementById('kin')
-    
+    email = document.getElementById('email'),
+    physicalAddress = document.getElementById('address')
 ;
 
 function nameValidation(name, event, error) {
@@ -39,28 +36,26 @@ function fieldValidation(event, field, fieldRegex, error1, error2) {
     }
 }
 
-function homeValidation(event) {
-    if (homeAddress.value === '') {
-        homeAddress.nextElementSibling.innerHTML = "Please enter your Home Address";
+function addressValidation(event) {
+    if (physicalAddress.value === '') {
+        physicalAddress.nextElementSibling.innerHTML = "Please enter your Physical Address";
         event.preventDefault();
         return false;
     } else {
-        homeAddress.nextElementSibling.innerHTML = "";
+        physicalAddress.nextElementSibling.innerHTML = "";
     }
 }
 
-function businessOwner(e) {
+function businessDetails(e) {
     const phoneNumberRegex = /^[\+]?[0-9]{10,14}$/i;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
 
-    nameValidation(firstName, e, "Please enter your First Name");
-    nameValidation(lastName, e, "Please enter your Last Name");
-    nameValidation(nextOfkin, e, "Please enter the name of Next Of Kin");
+    nameValidation(businessName, e, "Please enter your Business Name");
+    nameValidation(businessLine, e, "Please enter your Business Line");
     fieldValidation(e, email, emailRegex, "This field is required", "Please enter a valid Email");
     fieldValidation(e, phoneNumber, phoneNumberRegex, "This field is required", "Please enter a valid Phone Number");
-    homeValidation(e);
+    addressValidation(e);
     return true;
 }
 
-businessOwnerform.addEventListener("submit", businessOwner);
-
+businessDetailform.addEventListener("submit", businessDetails);
