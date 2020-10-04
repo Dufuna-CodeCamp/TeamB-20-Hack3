@@ -1,16 +1,16 @@
 let submitForm = document.getElementById('fundForm'),
-    firstUse = document.getElementById('firstUse'),
-    firstUseSummary = document.getElementById('firstUseSummary'),
-    secondUse = document.getElementById('secondUse'),
-    secondUseSummary = document.getElementById('secondUseSummary'),
-    thirdUse = document.getElementById('thirdUse'),
-    thirdUseSummary = document.getElementById('thirdUseSummary'),
-    forthUse = document.getElementById('forthUse'),
-    forthUseSummary = document.getElementById('forthUseSummary'),
-    firthUse = document.getElementById('firthUse'),
-    firthUseSummary = document.getElementById('firthUseSummary'),
-    sixthUse = document.getElementById('sixthUse'),
-    sixthUseUseSummary = document.getElementById('sixthUseUseSummary')
+    firstAmount = document.getElementById('firstAmount'),
+    firstBreakdown = document.getElementById('firstBreakdown'),
+    secondAmount = document.getElementById('secondAmount'),
+    secondBreakdown = document.getElementById('secondBreakdown'),
+    thirdAmount = document.getElementById('thirdAmount'),
+    thirdBreakdown = document.getElementById('thirdBreakdown'),
+    forthBreakdown = document.getElementById('forthAmount'),
+    forthAmount = document.getElementById('forthBreakdown'),
+    firthAmount = document.getElementById('firthAmount'),
+    firthBreakdown = document.getElementById('firthBreakdown'),
+    sixAmount = document.getElementById('sixAmount'),
+    sixthBreakdown = document.getElementById('sixthBreakdown')
 ;
 function required(field, event) {
     if(field.value === '') {
@@ -23,18 +23,18 @@ function required(field, event) {
     }
 }
 function fundForm (e){
-    required(firstUse, e);
-    required (firstUseSummary, e);
-    required (secondUse, e);
-    required (secondUseSummary, e);
-    required (thirdUse, e);
-    required (thirdUseSummary, e);
-    required (forthUse ,e);
-    required (forthUseSummary, e);
-    required (firthUse, e);
-    required (firthUseSummary, e);
-    required (sixthUse, e);
-    required (sixthUseUseSummary, e);
+    required(firstAmount, e);
+    required (firstBreakdown, e);
+    required (secondAmount, e);
+    required (secondBreakdown, e);
+    required (thirdAmount, e);
+    required (thirdBreakdown, e);
+    required (forthAmount, e);
+    required (forthBreakdown , e);
+    required (firthAmount, e);
+    required (firthBreakdown, e);
+    required (sixAmount, e);
+    required (sixthBreakdown, e);
     return true;
 }
 submitForm.addEventListener("submit",fundForm);
