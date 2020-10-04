@@ -28,10 +28,15 @@ nav ul{
 	list-style-type: none;	
 }
 
-a:hover,
-nav ul li.active a {
+a:hover {
 	background-color: #6daffe;
 	color: #b9732f;
+	font-weight: bold;
+}
+
+nav ul li.active a {
+	background-color: #6daffe;
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -166,6 +171,7 @@ label {
   background-color: rgb(209, 209, 209);
   height:30px;
 }
+
 ::placeholder{
     color:#116466;
     font-size:15.2px;
@@ -268,6 +274,12 @@ label {
     color: #6daffe;
     text-align: end;
     padding-left: 150px;
+  }
+
+  .footer-left h3,
+  .footer-right h3,
+  .footer-center h3 {
+    text-align: left;
   }
 }
 
