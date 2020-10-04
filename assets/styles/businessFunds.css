@@ -1,71 +1,76 @@
-*{
-  
+*{  
   padding:0;
   margin: 0;
   font-family:montserrat;
   font-family:Century Gothic;
-
-    /*box-sizing:border-box;
-  text-decoration: none;
-  list-style: none; */
 }
+
 header{ 
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg_1.JPG);
   height: 100vh;
   background-size: cover;
   background-position: center;   
 }
-.main ul{
-  list-style-type: none;
-  float: right;
-  margin-top: 28px;  
-  font-weight: bold;
+
+nav {
+  background-color: #2d3032;
+  padding: 20px;
 }
-.main ul li {
-  display: inline-block;
-}
-.main ul li a{
+
+nav a {
   text-decoration: none;
   color: #6daffe;
   padding: 8px 30px;
   transition: 0.6s ease;
 }
-.main ul li a:hover{
+
+nav ul{
+  list-style-type: none;  
+}
+
+a:hover {
   background-color: #6daffe;
   color: #b9732f;
   font-weight: bold;
 }
-.main ul li.active a{
+
+nav ul li.active a {
   background-color: #6daffe;
-  color: #b9732f;
+  color: #fff;
   font-weight: bold;
 }
-.logo h1{
-  float: left;
+
+.logo {
   color: #6daffe;
   padding: 8px 20px;
+  font-weight: bold;
+  font-size: 25px;
 }
+
 span{
   color: #b9732f;
 }
-.main{
-  max-width: 1200px;
-  margin: auto;
+
+.title {
+  padding: 60px;
+  max-width: 100%;
+  margin: 45px auto;
+  display: block;
+  overflow: hidden;
 }
-.title{
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  transform: translate(-50% -50%);
-}
+
 .title h1{
-  font-size: 50px;
+  font-size: 45px;
   color: #fff;
+  text-align: center;
+  max-width: 100%;
 }
+
 .title h2{
-  font-size: 50px;
-  padding-left: 50%;
+  font-size: 45px;
   color: #6daffe;
+  text-align: end;
+  max-width: 100%;
 }
 /**Styling for business owner form*/
 .details{
@@ -85,7 +90,7 @@ span{
 .business-details .form-title{
     text-align: left;
     color: #437fcf;
-    margin-left: 350px;
+    margin-left: 450px;
 }
 label{
     float: left;
@@ -99,7 +104,7 @@ label{
 .title-input {
     margin: 10px;
     margin-left: 2px;
-    width: 370px;
+    width: 400px;
     height: 40px;  
 }
 #fundForm{
@@ -107,15 +112,17 @@ label{
     margin: auto; 
 }
 #btn{
-   margin-left: 100px;
+   margin-left: 50px;
    padding: 15px;
    
 }
 #submit-btn{
-    background-color:#B9732F; 
+    background-color:#B9732F;
+    border-radius: 20px; 
     border: none;
-    height: 40px;
-    width: 25%;
+    font-weight: bold;
+    height: 30px;
+    width: 30%;
 }
 .fundForm .right-form{
     float: right;
@@ -135,7 +142,7 @@ label{
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .footer-container p{
@@ -172,6 +179,7 @@ label{
   background-color: rgb(209, 209, 209);
   height:30px;
 }
+
 ::placeholder{
     color:#116466;
     font-size:15.2px;
@@ -218,4 +226,83 @@ label{
   background: #007bb5;
   color: white;
 }
+
+@media screen and (min-width: 640px) {
+  nav li {
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+  }
+  
+  label {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .details input,
+  #gender {
+    width: 230px;
+  }
+  
+  .details {
+    padding: 50px 0 40px 100px;
+  }
+  
+  .details .but {
+    margin-left: 70px;
+  }
+  
+  .error {
+    padding-left: 325px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    padding: 60px;
+    width: fit-content;
+    margin: 45px auto;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .title h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-right: 150px;
+  }
+  
+  .title h2{
+    font-size: 50px;
+    color: #6daffe;
+    text-align: end;
+    padding-left: 150px;
+  }
+
+  .footer-left h3,
+  .footer-right h3,
+  .footer-center h3 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 640px) {
+  label {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+  }
+
+  .error {
+    padding-left: 325px;
+  }
+}
+
+
+
 
