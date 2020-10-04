@@ -1,6 +1,6 @@
 let businessDetailform = document.querySelector(".businessDetails"),
-    businessname = document.getElementById("businessname"),
-    businessline = document.getElementById("businessline"),
+    businessName = document.getElementById("businessname"),
+    businessLine = document.getElementById("businessline"),
     phoneNumber = document.getElementById('number'),
     email = document.getElementById('email'),
     physicalAddress = document.getElementById('address')
@@ -50,8 +50,8 @@ function businessDetails(e) {
     const phoneNumberRegex = /^[\+]?[0-9]{10,14}$/i;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
 
-    nameValidation(businessname, e, "Please enter your Business Name");
-    nameValidation(businessline, e, "Please enter your Business Line");
+    nameValidation(businessName, e, "Please enter your Business Name");
+    nameValidation(businessLine, e, "Please enter your Business Line");
     fieldValidation(e, email, emailRegex, "This field is required", "Please enter a valid Email");
     fieldValidation(e, phoneNumber, phoneNumberRegex, "This field is required", "Please enter a valid Phone Number");
     addressValidation(e);

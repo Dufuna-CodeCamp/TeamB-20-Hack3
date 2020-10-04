@@ -1,6 +1,6 @@
 let businessOwnerform = document.querySelector(".businessOwner"),
-    firstname = document.getElementById('firstname'),
-    lastname = document.getElementById('lastname'),
+    firstName = document.getElementById('firstname'),
+    lastName = document.getElementById('lastname'),
     email = document.getElementById('email'),
     gender = document.getElementById('gender'),
     phoneNumber = document.getElementById('number'),
@@ -53,8 +53,8 @@ function businessOwner(e) {
     const phoneNumberRegex = /^[\+]?[0-9]{10,14}$/i;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
 
-    nameValidation(firstname, e, "Please enter your First Name");
-    nameValidation(lastname, e, "Please enter your Last Name");
+    nameValidation(firstName, e, "Please enter your First Name");
+    nameValidation(lastName, e, "Please enter your Last Name");
     nameValidation(nextOfkin, e, "Please enter the name of Next Of Kin");
     fieldValidation(e, email, emailRegex, "This field is required", "Please enter a valid Email");
     fieldValidation(e, phoneNumber, phoneNumberRegex, "This field is required", "Please enter a valid Phone Number");

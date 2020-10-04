@@ -86,6 +86,8 @@ label {
   max-width: 100%;
   text-align: left;
   padding: 10px;
+  font-weight: bold;
+  font-size: 21px;
 }
 
 .details input,
@@ -104,11 +106,13 @@ label {
 
 .details .but {
   margin-left: 37px;
-  max-width: 100%;
   background-color: #b9732f;
   border-radius: 15px;
   border-color: #b9732f;
+  font-weight: bold;
+  padding: 5px 30px;
 }
+
 
 .error {
   font-size: 15px;
@@ -118,7 +122,7 @@ label {
 @media screen and (min-width: 640px) {
   label {
     display: inline-block;
-    width: 200px;
+    width: 300px;
     text-align: left;
   }
   
@@ -138,13 +142,12 @@ label {
   .error {
     padding-left: 225px;
   }
-  
 }
 
 @media screen and (min-width: 451px) and (max-width: 640px) {
   label {
     display: inline-block;
-    width: 200px;
+    width: 300px;
     text-align: left;
   }
 
