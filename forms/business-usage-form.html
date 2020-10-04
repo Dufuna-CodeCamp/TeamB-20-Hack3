@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Custom Styles-->
+    <link rel="stylesheet" type="text/css" href="../assets/styles/businessFunds.css">
+    <!--Font owesomes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Business Usage</title>
+</head>
+<body>
+  
+   <!--page wrapper-->
+   <div class="paga-wrapper">
+       <!--details-->
+      <div class="details">
+        <h1 class ="page-title">FILL IN THE FORM BELOW TO APPLY FOR GRANT</h1>
+        <div class="business-details">
+            <h2 class ="form-title">FUND PURPOSE</h2>
+                <form id="fundForm" method="post">
+                    <div>
+                         <label for="firstUse">Title:</label>
+                         <input class="title-input" type="firstUse" name="firstUse" id="firstUse">
+                         <span class="error-block"></span>
+                    </div>
+                    <div>
+                        <label for="Summary">Summary:</label>
+                        <textarea name="Summary" id="firstUseSummary" rows="5" cols="50"></textarea>
+                        <span class="error-block"></span> 
+                    </div>
+                    <div>
+                         <label for="secondUse">Title:</label>
+                         <input class="title-input" type="secondUse" name="secondUse" id="secondUse">
+                         <span class="error-block"></span>
+                    </div>
+                    <div>
+                        <label for="Summary">Summary</label>
+                        <textarea name="Summary" id="secondUseSummary" rows="5" cols="50"></textarea>
+                        <span class="error-block"></span> 
+                    </div>
+                    <div>
+                        <label for="thirdUse">Title:</label>
+                        <input class="title-input" type="thirdUse" name="thirdUse" id="thirdUse">
+                        <span class="error-block"></span>
+                    </div>
+                    <div>
+                        <label for="Summary">Summary:</label>
+                        <textarea name="Summary" id="thirdUseSummary" rows="5" cols="50"></textarea> 
+                        <span class="error-block"></span>
+                    </div>
+                    <div>
+                        <label for="ForthUse">Title:</label>
+                        <input class="title-input" type="ForthUse" name="ForthUse" id="ForthUse">
+                        <span class="error-block"></span>
+                    </div>
+                    <div>
+                        <label for="Summary">Summary:</label>
+                        <textarea name="ForthUseSummary" id="ForthUseSummary" rows="5" cols="50"></textarea> 
+                        <span class="error-block"></span>
+                     </div>
+                     <div>
+                        <label for="FirthUse">Title:</label>
+                        <input class="title-input" type="FirthUse" name="FirthUse" id="FirthUse">
+                        <span class="error-block"></span>
+                    </div>
+                    <div>
+                         <label for="Summary">Summary:</label>
+                         <textarea name="FirthUseSummary" id="FirthUseSummary" rows="5" cols="50"></textarea> 
+                         <span class="error-block"></span>
+                     </div>
+                     <div>
+                        <label for="sixthUse">Title:</label>
+                        <input class="title-input" type="sixthUse" name="sixthUse" id="sixthUse">
+                        <span class="error-block"></span>
+                    </div>
+                    <div>
+                        <label for="Summary">Summary:</label>
+                        <textarea name="sixthUseSummary" id="sixthUseUseSummary" rows="5" cols="50"></textarea>
+                        <span class="error-block"></span> 
+                     </div>
+                    <div id="btn">
+                        <input type="submit" id="submit-btn" value="Next Stage">
+                    </div>
+                </form>
+        </div>
+      </div> 
+      <!--end personal details-->
+   </div>
+    <!--end ofpage wrapper-->
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>About Us</h3>
+            <h5> Afrigrants is the leading champion of enterpreneurship in Africa.<br> Our objective is to empower women and men across our continent,<br> catalysing growth, driving poverty eradication and ensuring job <br>creation....</h5>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div> 
+        <div class="footer-right">
+            <h3>Available Grant</h3>
+            <ul>
+                 <li><a href="#">I.c.t Grant</a></li>
+                  <li><a href="#">Design Grant</a></li>
+                  <li><a href="#">Energy Grant</a></li>
+                  <li class="active"><a href="#">Agricultural Grant</a></li>
+                  <li class="active"><a href="#">Light manufacturing Grant</a></li>    
+                  <li><a href="#">Healthcare Research and Development Grant</a></li>
+            </ul>  
+        </div>
+        <div class="footer-center">
+            <h3>Sign up for our Newsletter</h3>
+            <input type="email" placeholder="Enter your email.." id="footer-email">
+            <input type="submit" value="SUBMIT" id="footer-email-btn">
+        </div>
+         <p>Copyright 2020 <span>Afrigrants.com</span> All rights reserved</p>          
+</div>
+    <script src="../assets/js/business-usage-form.js"></script>
+</body>
+</html>
