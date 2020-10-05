@@ -17,13 +17,12 @@ header{
 
 nav {
   background-color: #2d3032;
-  padding: 20px;
+  padding: 12px;
 }
 
 nav a {
   text-decoration: none;
   color: #6daffe;
-  padding: 8px 30px;
   transition: 0.6s ease;
 }
 
@@ -37,15 +36,8 @@ nav li a:hover {
   font-weight: bold;
 }
 
-nav ul li.active a {
-  background-color: #6daffe;
-  color: #fff;
-  font-weight: bold;
-}
-
 .logo {
   color: #6daffe;
-  padding: 8px 20px;
   font-weight: bold;
   font-size: 25px;
 }
@@ -456,11 +448,30 @@ h3{
 }
 
 @media screen and (min-width: 640px) {
+  nav {
+    padding: 20px;
+  }
+  
+  nav a {
+    padding: 8px 30px;
+  }
+
   nav li {
     display: inline-block;
     float: right;
     font-weight: bold;
   }  
+
+  .logo {
+    padding: 8px 20px;
+  }
+
+  nav ul li.active a {
+    background-color: #6daffe;
+    color: #fff;
+    font-weight: bold;
+  }
+
   label {
     display: inline-block;
     width: 300px;
