@@ -4,7 +4,9 @@
   margin: 0;
   font-family:montserrat;
   font-family:Century Gothic;
+  box-sizing: border-box;
 }
+
 /**********Header***************/
 header{ 
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg_1.JPG);
@@ -12,38 +14,46 @@ header{
   background-size: cover;
   background-position: center;   
 }
+
 nav {
   background-color: #2d3032;
   padding: 20px;
 }
+
 nav a {
   text-decoration: none;
   color: #6daffe;
   padding: 8px 30px;
   transition: 0.6s ease;
 }
+
 nav ul{
   list-style-type: none;  
 }
+
 nav li a:hover {
   background-color: #6daffe;
   color: #b9732f;
   font-weight: bold;
 }
+
 nav ul li.active a {
   background-color: #6daffe;
   color: #fff;
   font-weight: bold;
 }
+
 .logo {
   color: #6daffe;
   padding: 8px 20px;
   font-weight: bold;
   font-size: 25px;
 }
+
 span{
   color: #b9732f;
 }
+
 .title {
   padding: 60px;
   max-width: 100%;
@@ -51,56 +61,53 @@ span{
   display: block;
   overflow: hidden;
 }
+
 .title h1{
-  font-size: 45px;
+  font-size: 32px;
   color: #fff;
   text-align: center;
   max-width: 100%;
 }
+
 .title h2{
-  font-size: 45px;
+  font-size: 25px;
   color: #6daffe;
   text-align: end;
   max-width: 100%;
 }
+
 /**********About***************/
-.content{
-  overflow: hidden;
-  margin-top: 20px;
+.content,
+.process {
+  margin: 20px 0;
 }
-.number-1{
-   max-width: 50%;
-   float: left;
-   padding-right: 20px;
-   margin: auto 40px;
+
+.content h2,
+.process h2,
+.services-section h1 {
+  color:  #6daffe;
+  font-size: 30px;
 }
-.number-2 img{
-  padding: 20px;
-  transform: rotate(-2deg);
-  font-size: 10px;
+
+.process li {
+  padding: 5px 0;
 }
-.number-1-social{
-  padding: 20px;
+
+hr {
+  border: 1px solid  #b9732f;
 }
-.number-1-social a{
+
+.content article,
+.process ol {
   padding: 10px;
 }
-.border-1{
-  width: 60px;
-  height: 3px;
-  background: #6daffe;
-  margin: 20px auto;
-}
-.content h2 {
-  text-align: center;
-  margin-bottom: 5px;
-   margin-top: 10px;
-}
+
 /**********Available Grants***************/
 .services-section{
   background-color: #edf6ff;
   padding: 60px 0;
 }
+
 .inner-width{
   width: 100%;
   max-width: 1200px;
@@ -108,33 +115,39 @@ span{
   padding: 0 20px;
   overflow: hidden;
 }
+
 .section-title{
   text-align: center;
   color: #000;
   text-transform: uppercase;
   font-size: 30px;
 }
+
 .border{
   width: 160px;
   height: 2px;
   background: #6daffe;
   margin: 40px auto;
 }
+
 .services-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .service-box{
   max-width: 33.33%;
   padding: 10px;
   text-align: center;
   cursor: pointer;
 }
+
 .service-box a{
  text-decoration: none; 
  color: #6daffe;
 }
+
 .service-icon{
   display: inline-block;
   width: 70px;
@@ -145,31 +158,89 @@ span{
   margin-bottom: 30px;
   margin-top: 16px;
 }
+
 .service-icon i{
   line-height: 70px;
   transform: rotate(-45deg);
   font-size: 26px;
 }
+
 .service-box:hover .service-icon{
   background:#6daffe;
   color: #ddd;
 }
+
 .service-title{
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .service-desc{
   font-size: 14px;
 }
-/**********Forms***************/
+
+/*****************************Grant Types*****************************/
+.main-container {
+  padding-bottom: 20px;
+}
+
+.main-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-container h3 {
+  background-color: #ebebeb;
+  padding: 20px 0;
+}
+
+.main-container h4 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.eligibility-info,
+.timeframe-info {
+  padding: 15px 0;
+}
+
+.eligiblity-info p {
+  padding-top: 0;
+}
+
+.main-info {
+  padding-left: 20px;
+}
+
+.main-info p {
+  padding: 15px;
+}
+
+ol {
+  margin-left: 40px;
+}
+
+.main-container .but {
+  background-color: #b9732f;
+  border-radius: 15px;
+  border-color: #b9732f;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 80px;
+  margin-left: 20px;
+}
+
+/******************************Forms*********************************/
 h1,h3 {
   text-align: center;
   margin-bottom: 10px;
 }
+
 h1 {
   padding-top: 50px;
 }
+
 label {
   display: block;
   max-width: 100%;
@@ -178,18 +249,21 @@ label {
   font-weight: bold;
   font-size: 21px;
 }
+
 .details input,
 #gender {
   max-width: 100%;
   height: 34px;
-  background-color: rgb(209, 209, 209);
+  background-color:#ebebeb;
   border-radius: 8px;
   font-size: 16px;
 }
+
 .details {
   max-width: 100%;
   padding: 50px 0 40px 50px;
 }
+
 .details .but {
   margin-left: 12px;
   background-color: #b9732f;
@@ -198,58 +272,101 @@ label {
   font-weight: bold; 
   padding: 5px 30px;
 }
+
 .error {
   font-size: 15px;
   color: red;
 }
-.content{
-  min-height: 100vh;
+
+.details h1,h2 {
+  text-align: center;
 }
+
+.business-details{
+  width: 64%;
+  margin: auto;
+}
+
+.details h2 {
+  padding-bottom: 30px;
+}
+
+textarea {
+  background-color: #ebebeb;
+}
+
+/********************summary****************************/
+.box {
+  padding: 10px 0;
+}
+
+.box h2 {
+  text-align: left;
+  color:  #6daffe;
+  padding-bottom: 0;
+}
+
+.box ul {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+
 /*------------------- Footer Starts Here------------------*/
 .footer-left h3,
 .footer-right h3,
 .footer-center h3 {
   text-align: left;
 }
+
 .footer-container{
   background-color:#2d3032; 
   overflow: hidden;
   padding-bottom: 20px;
 }
+
 .container {
   display: flex;
   flex-direction: column;
 }
+
 .footer-container p{
   margin:0 auto;
   margin-top:50px;
   color:#fff;
   text-align: center;
 }
+
 .footer-left h5{
   padding: 10px;
   color: #fff;
 }
+
 .footer-left h3{
   padding-left: 15px;
 }
+
 h3{
   font-size: 25px;
   padding-top: 20px;
   color: #6daffe; 
 }
+
 .footer-container a{
   text-decoration:none;
   color:#fff;
   margin:0;
   padding:0;
 }
+
 .footer-center {
   padding: 10px;
 }
+
 .footer-right h3 {
   padding-left: 10px;
 }
+
 .footer-center #footer-email{
   margin-top:2px;
   border:1px solid #555;
@@ -258,6 +375,7 @@ h3{
   height:30px;
   width: 190px;
 }
+
 .footer-center #footer-email-btn {
   margin-top:2px;
   border:1px solid #555;
@@ -267,20 +385,25 @@ h3{
   height: 30px;
   font-weight: bold;
 }
+
 ::placeholder{
     color: #6daffe;
     font-size:15.2px;
 }
+
 .footer-right ul {
   list-style-type: none;
   margin: 0;
   padding: 10px;
-  font-size: 12.5px;
+  font-size: 14.5px;
+  font-weight: bold;
 }
+
 .footer-left a{
   padding: 5px;
   margin-left: 20px;
 }
+
 .fa {
   font-size: 30px;
   width: 30px;
@@ -288,38 +411,50 @@ h3{
   text-decoration: none;
   border-radius: 50%;
 }
+
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
+
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
+
 .fa-google {
   background: #dd4b39;
   color: white;
 }
+
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
+
 /*-------------------  @media Queries------------------*/
 @media screen and (max-width: 480px){
   .service-box{
     max-width: 100%; 
   }
 }
+
 @media screen and (min-width: 451px) and (max-width: 640px) {
   label {
     display: inline-block;
     width: 300px;
     text-align: left;
   }
+
+  .main-container .but{
+    margin-left: 90px;
+  }
+
   .error {
     padding-left: 325px;
   }
 }
+
 @media screen and (min-width: 640px) {
   nav li {
     display: inline-block;
@@ -348,6 +483,11 @@ h3{
     display: flex;
     flex-direction: row;
   }
+
+  .main-container .but {
+    margin-left: 430px;
+  }
+
   .title {
     padding: 60px;
     width: fit-content;
@@ -374,11 +514,13 @@ h3{
     padding-left: 55px;
   }
 }
+
 @media screen and (max-width: 768px){
   .service-box{
     max-width: 50%;  
   }
 }
+
 @media screen and (max-width: 960px){
   .service-box{
     max-width: 45%;
