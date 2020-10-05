@@ -1,0 +1,96 @@
+*{
+    box-sizing:border-box;
+  }
+
+  header {
+    background-color:#437fcf;
+    height: 66px;
+}
+header * {
+    color: white;
+}
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 20px;
+}
+header .logo-text{
+   margin: 9px;
+}
+header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li {
+    float: left;
+}
+header ul li a{
+   display: block;
+   padding: 21px;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+.main-1 {
+  margin-top: 60px;
+  background-color: #ebebeb;
+  width: 100%;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+}
+.main-1 h3{
+  color: #6daffe;
+  text-align: center;
+  font-size: 25px;
+}
+.main-info {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+.info{
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.info p{
+    color: #6daffe;
+    text-align: center;
+    font-size: 18px;
+}
+.info h4{
+    text-align: center;
+    font-size: 18px;
+}
+
+.info ul li{
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 300px;
+  line-height: 30px;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+.eligibility-info h4{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 90px;
+  margin-right: 60px;
+}
+ ul li{
+  margin-left: 100px;
+}
+p a {
+  color: #6daffe;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
