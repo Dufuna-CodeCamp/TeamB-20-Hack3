@@ -122,11 +122,10 @@ hr {
   margin: 40px auto;
 }
 
-.services-container{
-  display: flex;
-  flex-wrap: wrap;
+/* .services-container{
+  display: block;
   justify-content: center;
-}
+} */
 
 .service-box{
   max-width: 33.33%;
@@ -134,6 +133,10 @@ hr {
   text-align: center;
   cursor: pointer;
 }
+
+/* .service-box{
+  max-width: 100%;  
+} */
 
 .service-box a{
  text-decoration: none; 
@@ -240,6 +243,7 @@ label {
   padding: 10px;
   font-weight: bold;
   font-size: 21px;
+  vertical-align: top;
 }
 
 .details input,
@@ -248,7 +252,7 @@ label {
   height: 34px;
   background-color:#ebebeb;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .details {
@@ -263,9 +267,11 @@ label {
   border-color: #b9732f;
   font-weight: bold; 
   padding: 5px 30px;
+  font-size: 18px;
 }
 
-.error {
+.error,
+.error-block {
   font-size: 15px;
   color: red;
 }
@@ -285,6 +291,7 @@ label {
 
 textarea {
   background-color: #ebebeb;
+  max-width: 100%;
 }
 
 /********************summary****************************/
@@ -425,13 +432,8 @@ h3{
 }
 
 /*-------------------  @media Queries------------------*/
-@media screen and (max-width: 480px){
-  .service-box{
-    max-width: 100%; 
-  }
-}
 
-@media screen and (min-width: 451px) and (max-width: 640px) {
+@media screen and (min-width: 445px) and (max-width: 640px) {
   label {
     display: inline-block;
     width: 300px;
@@ -440,10 +442,6 @@ h3{
 
   .main-container .but{
     margin-left: 90px;
-  }
-
-  .error {
-    padding-left: 325px;
   }
 }
 
@@ -472,24 +470,35 @@ h3{
     font-weight: bold;
   }
 
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   label {
     display: inline-block;
     width: 300px;
     text-align: left;
   } 
+
   .details input,
   #gender {
     width: 230px;
-  } 
+  }
+
   .details {
     padding: 50px 0 40px 100px;
   }
+
   .details .but {
     margin-left: 70px;
   }
+
   .error {
-    padding-left: 325px;
+    padding-left: 306px;
   }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -518,23 +527,24 @@ h3{
     text-align: end;
     padding-left: 150px;
   }
+
   .footer-right h3{
     padding-left: 50px;
   }
+
   .footer-right ul{
     padding-left: 55px;
   }
-}
 
-@media screen and (max-width: 768px){
-  .service-box{
-    max-width: 50%;  
+  .newsletter {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 @media screen and (max-width: 960px){
   .service-box{
-    max-width: 45%;
+    max-width: 100%;
   }
 }
 

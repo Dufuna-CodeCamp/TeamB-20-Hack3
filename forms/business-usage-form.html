@@ -30,61 +30,69 @@
                             <label for="firstUse">Amount Requested:</label>
                             <input class="title-input" type="firstUse" name="firstUse"id="firstAmount">
                             <div class="error"></div>
-                       </div>
+                       </div><br>
                         <div>
                             <label for="Summary">Breakdown:</label>
-                            <textarea name="Summary" id="firstBreakdown" rows="2" cols="36"></textarea>
+                            <textarea name="Summary" id="firstBreakdown" rows="5" cols="36"></textarea>
                             <div class="error"></div> 
                         </div>
-                        
+                        <br><br>
                         <div>
                             <label for="secondUse">Amount Requested:</label>
                             <input class="title-input" type="secondUse" name="secondUse" id="secondAmount">
                             <div class="error"></div>
-                       </div>
+                       </div><br>
                         <div>
                             <label for="Summary">Breakdown:</label>
-                            <textarea name="Summary" id="secondBreakdown" rows="2" cols="36"></textarea>
+                            <textarea name="Summary" id="secondBreakdown" rows="5" cols="36"></textarea>
                             <div class="error"></div> 
                         </div>
+                        <br><br>
                         <div>
                             <label for="thirdUse">Amount Requested:</label>
                             <input class="title-input" type="thirdUse" name="thirdUse" id="thirdAmount">
                             <div class="error"></div>
                         </div>
+                        <br>
                         <div>
                             <label for="Summary">Breakdown:</label>
-                            <textarea name="Summary" id="thirdBreakdown" rows="2" cols="36"></textarea> 
+                            <textarea name="Summary" id="thirdBreakdown" rows="5" cols="36"></textarea> 
                             <div class="error"></div>
                         </div>
+                        <br><br>
                         <div>
                             <label for="forthUse">Amount Requested:</label>
                             <input class="title-input" type="forthUse" name="forthUse" id="forthAmount">
                             <div class="error"></div>
                         </div>
+                        <br>
                         <div>
                             <label for="Summary">Breakdown:</label>
-                            <textarea name="forthUseSummary" id="forthBreakdown" rows="2" cols="36"></textarea> 
+                            <textarea name="forthUseSummary" id="forthBreakdown" rows="5" cols="36"></textarea> 
                             <div class="error"></div>
                          </div>
+                         <br><br>
                         <div>
                             <label for="firthUse">Amount Requested:</label>
                             <input class="title-input" type="firthUse" name="firthUse" id="firthAmount">
                             <div class="error"></div>
                         </div>
+                        <br>
                         <div>
                             <label for="Summary">Breakdown:</label>
-                            <textarea name="firthUseSummary" id="firthBreakdown" rows="2" cols="36"></textarea> 
+                            <textarea name="firthUseSummary" id="firthBreakdown" rows="5" cols="36"></textarea> 
                             <div class="error"></div>
                         </div>
+                        <br><br>
                         <div>
                             <label for="sixthUse">Amount Requested:</label>
                             <input class="title-input" type="firthUse" name="firthUse" id="sixAmount">
                             <div class="error"></div>
                         </div>
+                        <br>
                         <div>
                             <label for="Summary">Breakdown:</label>
-                            <textarea name="firthUseSummary" id="sixthBreakdown" rows="2" cols="36"></textarea> 
+                            <textarea name="firthUseSummary" id="sixthBreakdown" rows="5" cols="36"></textarea> 
                             <div class="error"></div>
                         </div>
                         <br><br>
@@ -117,15 +125,21 @@
                         <li><a href="../grant-details/healthcareresearchGrant.html">Healthcare Research and Development Grant</a></li>
                     </ul>  
                 </div>
-                <div class="footer-center">
+                <form class="footer-center">
                     <h3>Sign up for our Newsletter</h3>
-                    <input type="email" placeholder="Enter your email.." id="footer-email">
-                    <input type="submit" value="SUBMIT" id="footer-email-btn">
-                </div>
+                    <div class="newsletter">
+                        <div class="newsletter-email-holder">
+                            <input type="email" placeholder="Enter your email.." id="footer-email">
+                            <div class="error-block"></div>
+                        </div>
+                        <input type="submit" value="SUBMIT" id="footer-email-btn">
+                    </div>
+                </form>
             </div>
             <p>Copyright 2020 <span>Afrigrants.com</span> All rights reserved</p>          
         </footer>
         <!--Javascript-->
         <script src="../assets/js/business-usage-form.js"></script>
+        <script src="../assets/js/newsletter.js"></script>
     </body>
 </html>
