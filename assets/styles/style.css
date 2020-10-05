@@ -1,4 +1,5 @@
-*{  
+*{
+  box-sizing: border-box;
   padding:0;
   margin: 0;
   font-family:montserrat;
@@ -73,7 +74,56 @@ span{
   max-width: 100%;
 }
 
+/***********Grant Lists**********/
+.main-container {
+  padding-bottom: 20px;
+}
 
+.main-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-container h3 {
+  background-color: #ebebeb;
+  padding: 20px 0;
+}
+
+.main-container h4 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.eligibility-info,
+.timeframe-info {
+  padding: 15px 0;
+}
+
+.eligiblity-info p {
+  padding-top: 0;
+}
+
+.main-info {
+  padding-left: 20px;
+}
+
+.main-info p {
+  padding: 15px;
+}
+
+ol {
+  margin-left: 40px;
+}
+
+.main-container .but {
+  background-color: #b9732f;
+  border-radius: 15px;
+  border-color: #b9732f;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 80px;
+  margin-left: 90px;
+}
 
 /**********Forms***************/
 
@@ -145,7 +195,7 @@ label {
 
 .footer-container p{
   margin:0 auto;
-  margin-top:50px;
+  margin-top: 6px;
   color:#fff;
   text-align: center;
 }
@@ -224,6 +274,7 @@ h3{
   text-decoration: none;
   border-radius: 50%;
 }
+
 .fa-facebook {
   background: #3B5998;
   color: white;
@@ -307,6 +358,10 @@ h3{
 
   .footer-right ul{
     padding-left: 55px;
+  }
+
+  .main-container .but {
+    margin-left: 430px;
   }
 }
 
