@@ -5,13 +5,14 @@ let submitForm = document.getElementById('fundForm'),
     secondBreakdown = document.getElementById('secondBreakdown'),
     thirdAmount = document.getElementById('thirdAmount'),
     thirdBreakdown = document.getElementById('thirdBreakdown'),
-    forthBreakdown = document.getElementById('forthAmount'),
-    forthAmount = document.getElementById('forthBreakdown'),
+    forthAmount = document.getElementById('forthAmount'),
+    forthBreakdown = document.getElementById('forthBreakdown'),
     firthAmount = document.getElementById('firthAmount'),
     firthBreakdown = document.getElementById('firthBreakdown'),
     sixAmount = document.getElementById('sixAmount'),
     sixthBreakdown = document.getElementById('sixthBreakdown')
 ;
+
 function required(field, event) {
     if(field.value === '') {
         field.nextElementSibling.innerHTML = "This field is required";
@@ -22,19 +23,38 @@ function required(field, event) {
         return true;
     }
 }
-function fundForm (e){
-    required(firstAmount, e);
+
+function amount(input, event) {
+    let inputRegex = /^(\$|)([1-9]\d{0,2}(\,\d{3})*|([1-9]\d*))(\.\d{2})?$/;
+    
+    if(input.value === '') {
+        input.nextElementSibling.innerHTML = "This field is required";
+        event.preventDefault();
+        return false;
+    } else if(!input.value.match(inputRegex)) {
+        input.nextElementSibling.innerHTML = "Please enter your Amount";
+        event.preventDefault();
+        return false;
+    } else {
+        input.nextElementSibling.innerHTML = "";
+        return true;
+    }  
+}
+
+function fundForm(e){
+    amount(firstAmount, e);
     required (firstBreakdown, e);
-    required (secondAmount, e);
+    amount (secondAmount, e);
     required (secondBreakdown, e);
-    required (thirdAmount, e);
+    amount (thirdAmount, e);
     required (thirdBreakdown, e);
-    required (forthAmount, e);
+    amount (forthAmount, e);
     required (forthBreakdown , e);
-    required (firthAmount, e);
+    amount (firthAmount, e);
     required (firthBreakdown, e);
-    required (sixAmount, e);
+    amount (sixAmount, e);
     required (sixthBreakdown, e);
     return true;
 }
-submitForm.addEventListener("submit",fundForm);
+
+submitForm.addEventListener("submit", fundForm);
