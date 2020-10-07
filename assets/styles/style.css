@@ -295,6 +295,11 @@ textarea {
 }
 
 /********************summary****************************/
+.detail {
+  padding: 15px 0;
+  margin: 10px 0;
+}
+
 .box {
   padding: 10px 0;
 }
